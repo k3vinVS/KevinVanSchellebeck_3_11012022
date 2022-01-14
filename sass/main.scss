@@ -3,3 +3,25 @@
 @import "./layout/city";
 @import "./layout/explorer";
 
+.fonctionnement {
+    h2 {
+        padding-left: 1rem;
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 1rem;
+    }
+
+    li {
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        margin: 0 1rem;
+        list-style: none;
+    }
+    
+}
