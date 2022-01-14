@@ -29,3 +29,26 @@ main .city {
         font-size: 1.2rem;
     }
 }
+
+.explorer {
+    text-align: center;
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    p {
+        color: #6c757d;
+    }
+
+    button {
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 2rem;
+        box-shadow: 2px 1px 10px -3px black;
+        background-image: linear-gradient(45deg , #FF79DA , #9356DC );
+    }
+}
