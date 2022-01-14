@@ -24,8 +24,8 @@ main .city {
     justify-content: center;
     gap: 1rem;
     padding: 0.5rem;
-}
 
-main .city i {
-    font-size: 1.2rem;
+    >i {
+        font-size: 1.2rem;
+    }
 }
