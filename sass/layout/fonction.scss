@@ -2,18 +2,19 @@
 
 .fonctionnement {
     counter-reset: steps;
-    h2 {
+
+    & h2 {
         padding-left: 1rem;
     }
 
-    ol {
+    & ol {
         display: flex;
         flex-direction: column;
         align-content: center;
         gap: 1rem;
     }
 
-    li {
+    & li {
         &::before {
             content: counter(steps);
             counter-increment: steps;
@@ -42,10 +43,13 @@
             margin-right: 1rem;
             color: grey;
             font-size: 1.1rem;
-        }
+    }
 
-        :hover {
-            color: $primaire;
+        &:hover{
+            background-color: rgba(147,86,220, 0.1);
+            > i {
+                color: $primaire;
+            }
         }
     }
     

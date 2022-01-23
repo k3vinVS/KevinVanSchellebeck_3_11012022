@@ -95,7 +95,10 @@ header {
   color: grey;
   font-size: 1.1rem;
 }
-.fonctionnement li :hover {
+.fonctionnement li:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.fonctionnement li:hover > i {
   color: #9356DC;
 }
 
