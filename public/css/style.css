@@ -53,6 +53,9 @@ header {
   box-shadow: 2px 1px 8px -3px black;
 }
 
+.fonctionnement {
+  counter-reset: steps;
+}
 .fonctionnement h2 {
   padding-left: 1rem;
 }
@@ -63,13 +66,37 @@ header {
   gap: 1rem;
 }
 .fonctionnement li {
+  position: relative;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
+  font-weight: bold;
+  padding: 1.2rem;
   flex-grow: 1;
   border-radius: 1rem;
   margin: 0 1rem;
   list-style: none;
   box-shadow: 2px 1px 8px -3px black;
+}
+.fonctionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356DC;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -0.8rem;
+}
+.fonctionnement li i {
+  margin-right: 1rem;
+  color: grey;
+  font-size: 1.1rem;
+}
+.fonctionnement li :hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
