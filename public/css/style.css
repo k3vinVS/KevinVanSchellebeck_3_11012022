@@ -13,6 +13,15 @@ h2 {
   padding-left: 1rem;
 }
 
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -131,8 +140,11 @@ header {
   right: 1rem;
   border-radius: 0.1rem;
 }
+.menus .card {
+  margin-bottom: 1rem;
+}
 .menus .card__image {
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   height: 15rem;
   background-size: cover;
 }
@@ -147,6 +159,22 @@ header {
 }
 .menus .card__image-4 {
   background-image: url("../../assets/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3, .menus .card__description p {
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  margin-top: 1rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

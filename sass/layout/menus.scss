@@ -1,3 +1,5 @@
+@import "../utils/position.scss";
+
 .menus {
     background-color: $lightgrey;
     padding: 2rem 0;
@@ -25,8 +27,10 @@
     }
 
     .card {
+        margin-bottom: 1rem;
+
         &__image {
-            border-radius: 1rem;
+            border-radius: 1rem 1rem 0 0;
             height: 15rem;
             background-size: cover;
         }
@@ -34,6 +38,25 @@
         @for $i from 1 through 4 {
             &__image-#{$i} {
                 background-image: url("../../assets/menu-#{$i}.jpg");
+            }
+        }
+
+        &__description {
+            position: relative;
+
+            h3, p {
+                margin: 0.5rem;
+            }
+
+            h3 {
+                margin-top: 1rem;
+            }
+        
+            i {
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            @include position;
             }
         }
     }
