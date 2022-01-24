@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  padding-left: 1rem;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -56,14 +60,12 @@ header {
 .fonctionnement {
   counter-reset: steps;
 }
-.fonctionnement h2 {
-  padding-left: 1rem;
-}
 .fonctionnement ol {
   display: flex;
   flex-direction: column;
   align-content: center;
   gap: 1rem;
+  padding: 0 1rem;
 }
 .fonctionnement li {
   position: relative;
@@ -75,6 +77,7 @@ header {
   margin: 0 1rem;
   list-style: none;
   box-shadow: 2px 1px 8px -3px black;
+  margin-bottom: 2rem;
 }
 .fonctionnement li::before {
   content: counter(steps);
@@ -97,9 +100,53 @@ header {
 }
 .fonctionnement li:hover {
   background-color: rgba(147, 86, 220, 0.1);
+  cursor: pointer;
 }
 .fonctionnement li:hover > i {
   color: #9356DC;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding: 2rem 0;
+}
+.menus__cards {
+  padding: 0 1rem;
+  display: grid;
+}
+.menus__cards .new {
+  border: 1px solid red;
+  position: relative;
+}
+.menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background: #99E2D0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.1rem;
+}
+.menus .card__image {
+  border-radius: 1rem;
+  height: 15rem;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url("../../assets/menu-1.jpg");
+}
+.menus .card__image-2 {
+  background-image: url("../../assets/menu-2.jpg");
+}
+.menus .card__image-3 {
+  background-image: url("../../assets/menu-3.jpg");
+}
+.menus .card__image-4 {
+  background-image: url("../../assets/menu-4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

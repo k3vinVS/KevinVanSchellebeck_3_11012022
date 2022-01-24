@@ -1,0 +1,40 @@
+.menus {
+    background-color: $lightgrey;
+    padding: 2rem 0;
+
+    &__cards {
+        padding: 0 1rem;
+        display: grid;
+        .new {
+            border: 1px solid red;
+            position: relative;
+        }
+        .new::before {
+            content: "Nouveau";
+            position: absolute;
+            height: 2rem;
+            width: 5rem;
+            background: $tertiaire;
+            color: darken($color: $tertiaire, $amount: 50%);
+            display: grid;
+            place-items: center;
+            top: 1rem;
+            right: 1rem;
+            border-radius: 0.1rem;
+        }
+    }
+
+    .card {
+        &__image {
+            border-radius: 1rem;
+            height: 15rem;
+            background-size: cover;
+        }
+
+        @for $i from 1 through 4 {
+            &__image-#{$i} {
+                background-image: url("../../assets/menu-#{$i}.jpg");
+            }
+        }
+    }
+}
