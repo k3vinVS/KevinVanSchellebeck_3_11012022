@@ -12,9 +12,15 @@ footer {
 
     p {
         padding: .3rem;
+
+        > .fa-utensils {
+            padding-right: 0.5rem;
+            font-size: 1rem;
+        }
     }
 
     i {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        padding-right: 0.4rem;
     }
 }

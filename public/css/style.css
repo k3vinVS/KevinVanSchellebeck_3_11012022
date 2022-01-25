@@ -162,12 +162,12 @@ header {
 .menus .card__description {
   position: relative;
   background-color: white;
-  padding: 0.8rem;
+  padding: 0.7rem;
   border-radius: 0 0 1rem 1rem;
   box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.3);
 }
 .menus .card__description h3, .menus .card__description p {
-  padding: 0.3rem;
+  padding: 0.1rem;
 }
 .menus .card__description i {
   font-size: 2rem;
@@ -191,8 +191,13 @@ footer h3 {
 footer p {
   padding: 0.3rem;
 }
+footer p > .fa-utensils {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
 footer i {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  padding-right: 0.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
