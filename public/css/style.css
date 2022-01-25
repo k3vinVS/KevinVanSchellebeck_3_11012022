@@ -66,8 +66,8 @@ header {
   padding: 0.8rem;
   border: none;
   border-radius: 2rem;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   cursor: pointer;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: 2px 1px 8px -3px black;
 }
 
@@ -183,6 +183,18 @@ header {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(170deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
 }
 
 footer {
