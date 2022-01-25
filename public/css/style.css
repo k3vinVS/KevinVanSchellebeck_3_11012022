@@ -51,8 +51,13 @@ header {
   background-color: #f3f3f3;
   padding: 1rem 1rem 3rem 1rem;
 }
+.explorer h2 {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
 .explorer p {
   color: #6c757d;
+  padding-bottom: 2rem;
 }
 .explorer button {
   color: white;
@@ -68,6 +73,9 @@ header {
 
 .fonctionnement {
   counter-reset: steps;
+}
+.fonctionnement h2 {
+  padding-top: 1rem;
 }
 .fonctionnement ol {
   display: flex;

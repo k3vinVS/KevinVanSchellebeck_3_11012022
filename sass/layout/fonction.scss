@@ -3,6 +3,10 @@
 .fonctionnement {
     counter-reset: steps;
 
+    h2 {
+        padding-top: 1rem;
+    }
+
     & ol {
         display: flex;
         flex-direction: column;
