@@ -1,7 +1,7 @@
 @import "../utils/position.scss";
 
 .menus {
-    background-color: $lightgrey;
+    background-color: $grey;
     padding: 2rem 0;
 
     &__cards {
@@ -42,13 +42,13 @@
 
         &__description {
             position: relative;
+            background-color: white;
+            padding: 0.8rem;
+            border-radius: 0 0 1rem 1rem;
+            box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.3);
 
             h3, p {
-                margin: 0.5rem;
-            }
-
-            h3 {
-                margin-top: 1rem;
+                padding: 0.3rem;
             }
         
             i {
