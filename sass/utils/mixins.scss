@@ -14,3 +14,26 @@
 @mixin base-shadow {
     box-shadow: 2px 1px 8px -3px black;
 }
+
+@mixin heart($size) {
+    i {
+        font-size: $size;
+        position: absolute;
+        right: 1rem;
+        @include position;
+        }
+
+        .fas {
+            color: transparent;
+            @include invert-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 200ms ease;
+        }
+
+        &:hover .fas {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.1);
+        }
+}

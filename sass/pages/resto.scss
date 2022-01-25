@@ -1,0 +1,14 @@
+@import "../utils/mixins";
+
+img {
+    width: 100%;
+}
+
+main {
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        padding: 1rem;
+        @include heart (1.7rem);
+        position: relative;
+    }
+}

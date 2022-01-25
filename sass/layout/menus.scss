@@ -46,31 +46,13 @@
             padding: 0.7rem;
             border-radius: 0 0 1rem 1rem;
             box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.3);
-
+            @include heart(2rem);
+            
             h3, p {
                 padding: 0.1rem;
             }
         
-            i {
-            font-size: 2rem;
-            position: absolute;
-            right: 1rem;
-            @include position;
-            }
-
-            .fas {
-                color: transparent;
-                @include invert-gradient;
-                background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 0;
-                transition: all 200ms ease;
-            }
-
-            &:hover .fas {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.1);
-            }
+            
         }
     }
 }
