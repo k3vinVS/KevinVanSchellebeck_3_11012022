@@ -1,14 +1,21 @@
 @import "../utils/mixins";
 
-img {
+.banner img {
+    display: block;
     width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
 }
 
-main {
+.resto__main {
     h2 {
         font-family: 'Shrikhand', cursive;
-        padding: 1rem;
+        padding: 1.5rem 1rem;
         @include heart (1.7rem);
         position: relative;
+        border-radius: 2rem 2rem 0 0;
+        background-color: $grey;
+        margin-top: -3rem;
     }
 }
