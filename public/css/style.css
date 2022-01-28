@@ -238,7 +238,7 @@ footer i {
   position: relative;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
-  margin-top: -3rem;
+  margin: -3rem 0 0 0;
 }
 .resto__main h2 i {
   font-size: 1.7rem;
@@ -258,6 +258,33 @@ footer i {
 .resto__main h2:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+.resto__main .menus {
+  padding: 0 1rem 2rem 1rem;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.resto__main .menus__card > h4 {
+  font-weight: unset;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.resto__main .menus__items {
+  background-color: white;
+  border-radius: 1rem;
+}
+.resto__main .menus__items h4 {
+  margin: 0;
+  padding: 0.5rem 0 0.2rem 0.5rem;
+}
+.resto__main .menus__items p {
+  padding: 0 0 0.5rem 0.5rem;
+  font-size: 0.9rem;
+}
+.resto__main .menus__items span {
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
