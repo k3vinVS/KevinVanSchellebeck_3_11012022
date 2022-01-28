@@ -21,34 +21,40 @@
 
     .menus {
         padding: 0 1rem 2rem 1rem;
-        background-color: lightgreen;
+        background-color: $grey;
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
 
-        &__card > h4 {
+        &__category > h4 {
             font-weight: unset;
             margin: 0;
             padding-bottom: 1rem;
+            text-decoration: underline $tertiaire 0.2rem;
+            text-underline-position: under;
         }
 
-        &__items {
+        &__card {
             background-color: white;
             border-radius: 1rem;
+            margin-bottom: 1rem;
 
             h4 {
                 margin: 0;
                 padding: 0.5rem 0 0.2rem 0.5rem;
-            }
+             }              
 
             p {
+                display: flex;
+                justify-content: space-between;
                 padding: 0 0 0.5rem 0.5rem;
-                font-size: 0.9rem;
+                font-size: 0.9rem;                
             }
 
             span {
-                justify-content: space-between;
+                padding-right: 1rem;
+                font-weight: bold;
             }
-        }
+        }        
     }
 }
