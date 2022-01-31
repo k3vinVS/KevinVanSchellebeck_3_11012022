@@ -226,17 +226,11 @@ footer i {
 
 header {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: -3rem;
 }
 header .fas {
   align-self: center;
+  position: left;
 }
-header h1 {
-  text-align: center;
-  margin-left: -1rem;
-}
-
 .banner img {
   display: block;
   width: 100%;
@@ -290,20 +284,28 @@ header h1 {
   background-color: white;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  display: flex;
 }
-.resto__main .menus__card h4 {
+.resto__main .menus__card__description h4 {
   margin: 0;
   padding: 0.5rem 0 0.2rem 0.5rem;
 }
-.resto__main .menus__card p {
+.resto__main .menus__card__description p {
   display: flex;
   justify-content: space-between;
   padding: 0 0 0.5rem 0.5rem;
   font-size: 0.9rem;
 }
 .resto__main .menus__card span {
-  padding-right: 1rem;
+  align-self: flex-end;
+  margin-left: auto;
+  padding-bottom: 0.5rem;
   font-weight: bold;
+}
+.resto__main .menus__card__check {
+  align-self: center;
+  background-color: #99E2D0;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

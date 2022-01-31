@@ -3,16 +3,16 @@
 
 header {
     display: flex;
-    justify-content: space-evenly;
-    margin-left: -3rem;
+    // justify-content: space-evenly;
+    // margin-left: -3rem;
 
     .fas {
         align-self: center;
+        position: left;
     }
 
     h1 {
-        text-align: center;
-        margin-left: -1rem;
+        
     }
 }
 
@@ -56,22 +56,34 @@ header {
             background-color: white;
             border-radius: 1rem;
             margin-bottom: 1rem;
+            display: flex;
 
-            h4 {
-                margin: 0;
-                padding: 0.5rem 0 0.2rem 0.5rem;
-             }              
+            &__description {
 
-            p {
-                display: flex;
-                justify-content: space-between;
-                padding: 0 0 0.5rem 0.5rem;
-                font-size: 0.9rem;                
+                h4 {
+                    margin: 0;
+                    padding: 0.5rem 0 0.2rem 0.5rem;
+                }              
+
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 0 0.5rem 0.5rem;
+                    font-size: 0.9rem;                
+                }
             }
 
             span {
-                padding-right: 1rem;
+                align-self: flex-end;
+                margin-left: auto;
+                padding-bottom: 0.5rem;
                 font-weight: bold;
+            }
+
+            &__check {
+                align-self: center;
+                background-color: $tertiaire;
+                padding: 0.5rem;
             }
         }        
     }
