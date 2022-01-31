@@ -224,6 +224,19 @@ footer i {
   padding-right: 0.4rem;
 }
 
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -3rem;
+}
+header .fas {
+  align-self: center;
+}
+header h1 {
+  text-align: center;
+  margin-left: -1rem;
+}
+
 .banner img {
   display: block;
   width: 100%;
