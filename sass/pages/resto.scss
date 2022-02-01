@@ -3,18 +3,22 @@
 
 header {
     display: flex;
-    // justify-content: space-evenly;
-    // margin-left: -3rem;
+    align-items: center;
 
-    .fas {
-        align-self: center;
-        position: left;
+    .fa-arrow-left {
+        padding: 1rem;
+    
     }
 
     h1 {
-        
+        width: 90%;
+        text-align: center;
     }
+    
 }
+
+
+
 
 .banner {
     img {
@@ -57,33 +61,30 @@ header {
             border-radius: 1rem;
             margin-bottom: 1rem;
             display: flex;
+            padding: 0.5rem;
 
             &__description {
-
-                h4 {
-                    margin: 0;
-                    padding: 0.5rem 0 0.2rem 0.5rem;
-                }              
+                align-self: center;            
 
                 p {
-                    display: flex;
+                    // display: flex;
                     justify-content: space-between;
-                    padding: 0 0 0.5rem 0.5rem;
                     font-size: 0.9rem;                
                 }
             }
 
             span {
-                align-self: flex-end;
+                // align-self: flex-end;
                 margin-left: auto;
-                padding-bottom: 0.5rem;
+                padding: 1rem;
                 font-weight: bold;
             }
 
             &__check {
                 align-self: center;
                 background-color: $tertiaire;
-                padding: 0.5rem;
+                // padding: 1.55rem 0.8rem;
+                margin-right: -3rem;
             }
         }        
     }
