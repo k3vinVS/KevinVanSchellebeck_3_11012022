@@ -38,7 +38,7 @@
         border-radius: 1rem;
         margin: 0 1rem;
         list-style: none;
-        @include base-shadow;
+        @include box-shadow;
         margin-bottom: 2rem;
 
         & i {

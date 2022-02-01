@@ -26,7 +26,7 @@
         border-radius: 2rem;
         cursor: pointer;
         @include gradient;
-        @include base-shadow;
+        @include box-shadow;
     }
 }
 
