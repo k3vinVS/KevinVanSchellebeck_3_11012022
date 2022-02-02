@@ -7,7 +7,8 @@ header {
     align-items: center;
 
     .fa-arrow-left {
-        padding: 1rem;    
+        padding: 1rem;
+        cursor: pointer;    
     }
 
     h1 {
@@ -50,12 +51,19 @@ header {
                     overflow: hidden;
                     text-overflow: ellipsis;
 
-        &__category > h4 {
+        &__category {
+
+            > h4 {
             font-weight: unset;
-            margin: 0;
-            padding-bottom: 1rem;
-            text-decoration: underline $tertiaire 0.2rem;
-            text-underline-position: under;
+            margin: 0;            
+            margin-bottom: 0.2rem;
+            }
+
+            .overline {
+                border-top: 3px solid $tertiaire;
+                width: 2.6rem;
+                margin-bottom: 0.8rem;
+            }
         }
 
         &__card {

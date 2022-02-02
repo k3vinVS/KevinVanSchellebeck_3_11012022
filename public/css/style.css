@@ -238,6 +238,7 @@ header {
 }
 header .fa-arrow-left {
   padding: 1rem;
+  cursor: pointer;
 }
 header h1 {
   width: 82%;
@@ -292,9 +293,12 @@ header h1 {
 .resto__main .menus__category > h4 {
   font-weight: unset;
   margin: 0;
-  padding-bottom: 1rem;
-  text-decoration: underline #99E2D0 0.2rem;
-  text-underline-position: under;
+  margin-bottom: 0.2rem;
+}
+.resto__main .menus__category .overline {
+  border-top: 3px solid #99E2D0;
+  width: 2.6rem;
+  margin-bottom: 0.8rem;
 }
 .resto__main .menus__card {
   background-color: white;
