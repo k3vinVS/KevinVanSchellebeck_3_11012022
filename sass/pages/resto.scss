@@ -47,11 +47,9 @@ header {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
-        white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
 
         &__category {
+            overflow: hidden;
 
             > h4 {
             font-weight: unset;
@@ -71,18 +69,16 @@ header {
             border-radius: 1rem;
             margin-bottom: 1rem;
             display: flex;            
-            overflow: hidden;            
+            overflow: hidden;
             box-shadow: 2px 4px 10px lightgrey;
 
             &__description {
-                padding: 0.8rem;
-                white-space: nowrap;
+                padding: 0.8rem; 
                 overflow: hidden;
-                text-overflow: ellipsis; 
-                
+
                 h4, p {
-                    white-space: nowrap;
                     overflow: hidden;
+                    white-space: nowrap;
                     text-overflow: ellipsis;
                 }
 
@@ -103,6 +99,7 @@ header {
             &__check {
                 display: grid;
                 place-items: center;
+                flex-shrink: 0;
                 background-color: $tertiaire;
                 width: 4rem;
                 margin-right: -4rem;

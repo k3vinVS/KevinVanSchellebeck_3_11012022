@@ -286,9 +286,9 @@ header h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  white-space: nowrap;
+}
+.resto__main .menus__category {
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .resto__main .menus__category > h4 {
   font-weight: unset;
@@ -310,13 +310,11 @@ header h1 {
 }
 .resto__main .menus__card__description {
   padding: 0.8rem;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .resto__main .menus__card__description h4, .resto__main .menus__card__description p {
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .resto__main .menus__card__description p {
@@ -333,6 +331,7 @@ header h1 {
 .resto__main .menus__card__check {
   display: grid;
   place-items: center;
+  flex-shrink: 0;
   background-color: #99E2D0;
   width: 4rem;
   margin-right: -4rem;
