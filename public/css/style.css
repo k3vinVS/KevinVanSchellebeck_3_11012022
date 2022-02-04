@@ -281,7 +281,7 @@ header h1 {
   transform: translateY(-50%) scale(1.1);
 }
 .resto__main .menus {
-  padding: 0 1rem 2rem 1rem;
+  padding-bottom: 2rem;
   background-color: #f6f6f6;
   display: grid;
   grid-template-columns: 1fr;
@@ -292,18 +292,17 @@ header h1 {
 }
 .resto__main .menus__category > h4 {
   font-weight: unset;
-  margin: 0;
-  margin-bottom: 0.2rem;
+  margin: 0 0 0.2rem 1rem;
 }
 .resto__main .menus__category .overline {
   border-top: 3px solid #99E2D0;
   width: 2.6rem;
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.8rem 1rem;
 }
 .resto__main .menus__card {
   background-color: white;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   display: flex;
   overflow: hidden;
   box-shadow: 2px 4px 10px lightgrey;
