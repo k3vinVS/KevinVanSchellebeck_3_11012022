@@ -96,6 +96,16 @@ header h1 {
   cursor: pointer;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: 2px 1px 8px -3px black;
+  transition: transform 200ms;
+  transition: transform 200ms;
+}
+.explorer button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.explorer button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 .fonctionnement {
@@ -243,6 +253,7 @@ footer h3 {
 footer p {
   padding: 0.3rem;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 footer p > .fa-utensils {
   padding-right: 0.55rem;
@@ -343,6 +354,7 @@ header .fa-arrow-left {
   box-shadow: 2px 4px 10px lightgrey;
   animation: appear 1s;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 .resto__main .menus__category .menus__card:nth-child(1) {
   animation-delay: 100ms;
@@ -417,7 +429,17 @@ header .fa-arrow-left {
   cursor: pointer;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   box-shadow: 2px 1px 8px -3px black;
+  transition: transform 200ms;
   width: 48vw;
+  transition: transform 200ms;
+}
+.resto__main .command button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.resto__main .command button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

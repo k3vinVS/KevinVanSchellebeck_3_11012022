@@ -48,4 +48,10 @@
         cursor: pointer;
         @include gradient;
         @include box-shadow;
+        transition: transform 200ms;
+
+        &:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
 }
