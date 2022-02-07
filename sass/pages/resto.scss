@@ -41,10 +41,18 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         &__category {
             overflow: hidden;
-
+            
             
             > h4 {
                 font-weight: unset;
@@ -72,6 +80,7 @@ header{
                 animation: appear 1s;
                 animation-fill-mode: both;
                 cursor: pointer;
+                
                 
                 &__description {
                     padding: 0.8rem; 
