@@ -1,7 +1,6 @@
 @import "../utils/mixins";
 @import "../utils/animations";
 
-
 header{
 
     .fa-arrow-left {
@@ -59,7 +58,7 @@ header{
             }
             
             .menus__card {
-                @for $i from 1 through 3 {
+                @for $i from 1 through 4 {
                     &:nth-child(#{$i}) {
                         animation-delay: 100ms * $i;
                     }
