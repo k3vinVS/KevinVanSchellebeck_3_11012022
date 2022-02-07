@@ -10,11 +10,9 @@ header{
         position: absolute;
         left: 1rem;
         top: 50%;
-        transform: translateY(-50%);        
+        transform: translateY(-50%);   
     }
 }
-
-
 
 
 .banner {
@@ -48,9 +46,10 @@ header{
         &__category {
             overflow: hidden;
 
+            
             > h4 {
-            font-weight: unset;
-            margin: 0 0 0.2rem 1rem;
+                font-weight: unset;
+                margin: 0 0 0.2rem 1rem;
             }
 
             .overline {
@@ -58,70 +57,77 @@ header{
                 width: 2.6rem;
                 margin: 0 0 0.8rem 1rem;
             }
-        }
-
-        &__card {
-            background-color: white;
-            border-radius: 1rem;
-            margin: 0 1rem 1rem 1rem;
-            display: flex;            
-            overflow: hidden;
-            box-shadow: 2px 4px 10px lightgrey;
-
-            &__description {
-                padding: 0.8rem; 
+            
+            .menus__card {
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+                display: flex;            
+                background-color: white;
+                border-radius: 1rem;
                 overflow: hidden;
-
-                h4, p {
+                margin: 0 1rem 1rem 1rem;
+                box-shadow: 2px 4px 10px lightgrey;
+                animation: appear 1s;
+                animation-fill-mode: both;
+                
+                &__description {
+                    padding: 0.8rem; 
                     overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
+                    
+                    h4, p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    
+                    p {
+                        justify-content: space-between;
+                        font-size: 0.9rem;                
+                    }
                 }
-
-                p {
-                    justify-content: space-between;
-                    font-size: 0.9rem;                
+                
+                span {
+                    margin-left: auto;
+                    padding: 0.8rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: flex-end;
                 }
-            }
-
-            span {
-                margin-left: auto;
-                padding: 0.8rem;
-                font-weight: bold;
-                display: flex;
-                align-items: flex-end;
-            }
-
-            &__check {
-                display: grid;
-                place-items: center;
-                flex-shrink: 0;
-                background-color: $tertiaire;
-                width: 4rem;
-                margin-right: -4rem;
-                border-radius: 0 1rem 1rem 0;
-                transition: margin-right 0.5s;
-
-                .fa-check {
+                
+                &__check {
                     display: grid;
                     place-items: center;
-                    color: $tertiaire;
-                    background-color: white;
-                    aspect-ratio: 1;
-                    width: 2rem;
-                    border-radius: 1rem;
-
+                    flex-shrink: 0;
+                    background-color: $tertiaire;
+                    width: 4rem;
+                    margin-right: -4rem;
+                    border-radius: 0 1rem 1rem 0;
+                    transition: margin-right 0.5s;
+                    
+                    .fa-check {
+                        display: grid;
+                        place-items: center;
+                        color: $tertiaire;
+                        background-color: white;
+                        aspect-ratio: 1;
+                        width: 2rem;
+                        border-radius: 1rem;
+                        
+                    }
                 }
-            }
-
-            &:hover .menus__card__check {
-                margin-right: 0;
-
-                .fa-check {
-                    animation: spin 0.5s ease-in-out;
+                
+                &:hover .menus__card__check {
+                    margin-right: 0;
+                    
+                    .fa-check {
+                        animation: spin 0.5s ease-in-out;
+                    }
                 }
-            }
-        }        
+            }        
+        }
     }
 
     .command {
