@@ -31,7 +31,7 @@ a {
   height: 100vh;
   inset: 0;
   z-index: 1;
-  animation: loader 200ms 3s forwards;
+  animation: loader 200ms 2s forwards;
   transform-origin: top;
 }
 .load .fa-spinner {
@@ -121,7 +121,7 @@ header h1 {
   gap: 1rem;
   padding: 0 1rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .fonctionnement ol {
     display: flex;
     flex-wrap: nowrap;
@@ -165,7 +165,7 @@ header h1 {
 }
 @media screen and (min-width: 768px) and (max-width: 998px) {
   .fonctionnement li::before {
-    bottom: 1.9vh;
+    bottom: 36%;
   }
 }
 @media screen and (max-width: 330px) {
@@ -195,6 +195,27 @@ header h1 {
 .menus__cards {
   padding: 0 1rem;
   display: grid;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menus__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .menus__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menus__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
 }
 .menus__cards .new {
   position: relative;
@@ -356,7 +377,7 @@ header .fa-arrow-left {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .resto__main .menus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -438,7 +459,7 @@ header .fa-arrow-left {
   place-items: center;
   color: #99E2D0;
   background-color: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
 }
@@ -471,6 +492,16 @@ header .fa-arrow-left {
 .resto__main .command button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .resto__main .command button {
+    width: 30vw;
+  }
+}
+@media (min-width: 1024px) {
+  .resto__main .command button {
+    width: 20vw;
+  }
 }
 .resto__main .command button:hover {
   transform: scale(1.02);

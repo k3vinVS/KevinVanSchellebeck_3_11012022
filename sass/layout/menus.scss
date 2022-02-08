@@ -7,6 +7,23 @@
     &__cards {
         padding: 0 1rem;
         display: grid;
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;            
+        }
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media screen and (min-width: 1025px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        
         .new {
             position: relative;
         }

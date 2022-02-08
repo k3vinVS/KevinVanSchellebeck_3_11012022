@@ -121,7 +121,7 @@ header{
                         place-items: center;
                         color: $tertiaire;
                         background-color: white;
-                        aspect-ratio: 1;
+                        aspect-ratio: 1 / 1;
                         width: 2rem;
                         border-radius: 1rem;
                         
@@ -149,6 +149,13 @@ header{
             @include button;
             width: 48vw;
             transition: transform 200ms;
+
+            @include tablet {
+                width: 30vw;          
+            }
+            @include desktop {
+                width: 20vw;
+            }
     
             &:hover {
                 transform: scale(1.02);
