@@ -1,0 +1,167 @@
+@import "../utils/mixins";
+@import "../utils/animations";
+
+header{
+
+    .fa-arrow-left {
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);   
+    }
+}
+
+
+.banner {
+    img {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+    }
+}
+
+.resto__main {
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        padding: 1.5rem 1rem;
+        @include heart (1.7rem);
+        position: relative;
+        border-radius: 2rem 2rem 0 0;
+        background-color: $grey;
+        margin: -3rem 0 0 0;
+    }
+
+    .menus {
+        padding: 0;
+        background-color: $grey;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__category {
+            overflow: hidden;
+            
+            
+            > h4 {
+                font-weight: unset;
+                margin: 0 0 0.2rem 1rem;
+            }
+
+            .overline {
+                border-top: 3px solid $tertiaire;
+                width: 2.6rem;
+                margin: 0 0 0.8rem 1rem;
+            }
+            
+            .menus__card {
+                @for $i from 1 through 4 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+                display: flex;            
+                background-color: white;
+                border-radius: 1rem;
+                overflow: hidden;
+                margin: 0 1rem 1rem 1rem;
+                box-shadow: 2px 4px 10px lightgrey;
+                animation: appear 1s;
+                animation-fill-mode: both;
+                cursor: pointer;
+                
+                
+                &__description {
+                    padding: 0.8rem; 
+                    overflow: hidden;
+                    
+                    h4, p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    
+                    p {
+                        justify-content: space-between;
+                        font-size: 0.9rem;                
+                    }
+                }
+                
+                span {
+                    margin-left: auto;
+                    padding: 0.8rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                
+                &__check {
+                    display: grid;
+                    place-items: center;
+                    flex-shrink: 0;
+                    background-color: $tertiaire;
+                    width: 4rem;
+                    margin-right: -4rem;
+                    border-radius: 0 1rem 1rem 0;
+                    transition: margin-right 0.5s;
+                    
+                    .fa-check {
+                        display: grid;
+                        place-items: center;
+                        color: $tertiaire;
+                        background-color: white;
+                        aspect-ratio: 1 / 1;
+                        width: 2rem;
+                        border-radius: 1rem;
+                        
+                    }
+                }
+                
+                &:hover .menus__card__check {
+                    margin-right: 0;
+                    
+                    .fa-check {
+                        animation: spin 0.5s ease-in-out;
+                    }
+                }
+            }        
+        }
+    }
+
+    .command {
+        height: 20vh;
+        display: grid;
+        place-items: center;
+        background-color: $grey;
+        padding-bottom: 2rem;
+        
+        button {
+            @include button;
+            width: 48vw;
+            transition: transform 200ms;
+
+            @include tablet {
+                width: 30vw;          
+            }
+            @include desktop {
+                width: 20vw;
+            }
+    
+            &:hover {
+                transform: scale(1.02);
+                opacity: 0.9;
+            }
+        }
+    }
+}
