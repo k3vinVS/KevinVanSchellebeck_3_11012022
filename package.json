@@ -4,16 +4,17 @@
   "description": "Projet ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "build":
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k3vinVS/KevinVanSchellebeck_3_14012022.git"
+    "url": "git+https://github.com/k3vinVS/KevinVanSchellebeck_3_11012022.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/k3vinVS/KevinVanSchellebeck_3_14012022/issues"
+    "url": "https://github.com/k3vinVS/KevinVanSchellebeck_3_11012022/issues"
   },
-  "homepage": "https://github.com/k3vinVS/KevinVanSchellebeck_3_14012022#readme"
+  "homepage": "https://github.com/k3vinVS/KevinVanSchellebeck_3_11012022#readme"
 }
