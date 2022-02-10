@@ -144,6 +144,7 @@ header{
         display: grid;
         place-items: center;
         background-color: $grey;
+        padding-bottom: 2rem;
         
         button {
             @include button;

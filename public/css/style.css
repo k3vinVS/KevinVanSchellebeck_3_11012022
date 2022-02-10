@@ -474,6 +474,7 @@ header .fa-arrow-left {
   display: grid;
   place-items: center;
   background-color: #f6f6f6;
+  padding-bottom: 2rem;
 }
 .resto__main .command button {
   color: white;
