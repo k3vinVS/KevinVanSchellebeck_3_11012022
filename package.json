@@ -2,7 +2,7 @@
   "name": "p3_vanschellebeck_kevin",
   "version": "1.0.0",
   "description": "Projet ohmyfood",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
